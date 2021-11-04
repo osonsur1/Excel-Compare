@@ -1,0 +1,31 @@
+{
+    "name": "excel-compare",
+    "productName": "ExcelCompare",
+    "version": "1.0.0",
+    "description": "App to compare excel files",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "dev": "nodemon --exec electron .",
+        "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+        "package-win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=false --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ExcelCompare\"",
+        "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=false --out=release-builds"
+    },
+    "author": "OmkarS",
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "^11.2.0",
+        "electron-packager": "^15.2.0",
+        "nodemon": "^2.0.3"
+    },
+    "dependencies": {
+        "electron-builder": "^22.9.1",
+        "electron-log": "^4.1.2",
+        "imagemin": "^7.0.1",
+        "imagemin-mozjpeg": "^8.0.0",
+        "imagemin-pngquant": "^8.0.0",
+        "lodash": "^4.17.20",
+        "slash": "^3.0.0",
+        "xlsx": "^0.16.9"
+    }
+}

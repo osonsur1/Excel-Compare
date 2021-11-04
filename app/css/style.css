@@ -1,0 +1,48 @@
+.mybody {
+    background-color: #ff9900;
+}
+
+.container {
+    width: 400px;
+    margin-top: 70px;
+    padding: 0 20px;
+}
+
+.about {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+}
+
+.btn-new {
+    background-color: #131921;
+}
+
+.btn-new:hover {
+    background-color: #232f3e;
+}
+
+.output {
+    margin-top: 40px;
+}
+
+#output-path {
+    font-weight: bold;
+    font-style: italic;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #131921;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #131921;
+}
+
+.card {
+    background-color: #febd69;
+}
